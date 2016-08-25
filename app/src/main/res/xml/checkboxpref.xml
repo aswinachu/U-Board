@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:key="checkbox_pref"
+
+    android:title="Check Box Preferences">
+    <PreferenceCategory android:title=" My Preferences">
+
+    <CheckBoxPreference
+
+        android:key="pref_opt1"
+
+        android:title="Sale"
+        />
+
+    <CheckBoxPreference
+
+        android:key="pref_opt2"
+
+        android:title="Housing"
+
+         />
+
+    <CheckBoxPreference
+
+        android:key="pref_opt3"
+
+        android:title="Events"
+
+         />
+
+    <CheckBoxPreference
+
+        android:key="pref_opt4"
+
+        android:title="Jobs"
+
+         />
+    </PreferenceCategory>
+
+</PreferenceScreen>

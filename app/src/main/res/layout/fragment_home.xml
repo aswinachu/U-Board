@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iit.t1.u_board.activity.HomeFragment"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/HomeIconlilayout">
+
+    </LinearLayout>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/HomeIconlilayout"
+        android:background="@drawable/bgimg">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/events"
+                        android:onClick="eventsmenu"
+                        android:id="@+id/eventsButton"
+                        android:layout_weight="1" />
+
+
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/sales"
+                        android:onClick="salemenu"
+                        android:id="@+id/saleButton"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/button3"
+                    android:background="@drawable/homeimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1.00"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/houseButton"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="housemenu"
+                        android:background="@drawable/house" />
+
+
+                    <ImageButton
+                        android:id="@+id/jobsButton"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="jobsmenu"
+                        android:background="@drawable/jobs" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </GridLayout>
+
+
+</RelativeLayout>

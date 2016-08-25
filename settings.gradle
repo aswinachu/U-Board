@@ -1,0 +1,1 @@
+include ':app', ':mongo-java-driver-2.10.1', ':json-simple-1.1', ':mongo-java-driver-2.12.0-javadoc'
